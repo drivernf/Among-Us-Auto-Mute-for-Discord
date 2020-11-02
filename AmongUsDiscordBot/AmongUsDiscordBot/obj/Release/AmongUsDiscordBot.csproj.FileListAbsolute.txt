@@ -1,0 +1,7 @@
+D:\VS Projects\AmongUsDiscordBot\AmongUsDiscordBot\obj\Release\AmongUsDiscordBot.csproj.CoreCompileInputs.cache
+D:\VS Projects\AmongUsDiscordBot\AmongUsDiscordBot\bin\Release\Among Us Auto Mute for Discord.exe.config
+D:\VS Projects\AmongUsDiscordBot\AmongUsDiscordBot\bin\Release\Among Us Auto Mute for Discord.exe
+D:\VS Projects\AmongUsDiscordBot\AmongUsDiscordBot\bin\Release\Among Us Auto Mute for Discord.pdb
+D:\VS Projects\AmongUsDiscordBot\AmongUsDiscordBot\obj\Release\Among Us Auto Mute for Discord.exe
+D:\VS Projects\AmongUsDiscordBot\AmongUsDiscordBot\obj\Release\Among Us Auto Mute for Discord.pdb
+D:\VS Projects\AmongUsDiscordBot\AmongUsDiscordBot\obj\Release\AmongUsDiscordBot.csprojAssemblyReference.cache

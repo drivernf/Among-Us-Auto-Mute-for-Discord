@@ -1,0 +1,7 @@
+D:\VS Projects\Startup\Startup\bin\Debug\Startup.exe.config
+D:\VS Projects\Startup\Startup\bin\Debug\Startup.exe
+D:\VS Projects\Startup\Startup\bin\Debug\Startup.pdb
+D:\VS Projects\Startup\Startup\obj\Debug\Startup.csprojAssemblyReference.cache
+D:\VS Projects\Startup\Startup\obj\Debug\Startup.csproj.CoreCompileInputs.cache
+D:\VS Projects\Startup\Startup\obj\Debug\Startup.exe
+D:\VS Projects\Startup\Startup\obj\Debug\Startup.pdb
