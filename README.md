@@ -14,7 +14,9 @@
   ·
   <a href="https://github.com/drivernf/Among-Us-Auto-Mute-for-Discord#getting-started">Getting Started</a>
   ·
-  <a href="https://blog.getbootstrap.com/">Report Bug</a>
+  <a href="https://github.com/drivernf/Among-Us-Auto-Mute-for-Discord/issues/new?template=bug_report.md">Report Bug</a>
+  ·
+  <a href="https://github.com/drivernf/Among-Us-Auto-Mute-for-Discord/issues/new?template=feature_request.md">Request Feature</a>
 </p>
 
 ## About
@@ -67,4 +69,4 @@ Automatically mutes and unmutes Discord while playing Among Us. Uses Discord's "
 </p>
 
 11. Click the "Test" button, you should notice Discord briefly mutes and unmutes
-12. Success! Now go enjoy playing Among Us and let us know if you have any issues
+12. Success! Now go enjoy playing Among Us and let us know if you have any [issues](https://github.com/drivernf/Among-Us-Auto-Mute-for-Discord/issues/new?template=bug_report.md)
