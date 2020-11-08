@@ -57,7 +57,7 @@ Automatically mutes and unmutes Discord while playing Among Us. Uses Discord's "
 7. Change the newly created keybind's action to "Push to Mute"
 8. Click the "Record Keybind" button and enter a keybind sequence of your choice
 <p align="center">
-  <img src="https://github.com/drivernf/README_Markdown/blob/main/among_us_discord_discord_keybinds.png" width="1002" height="592">
+  <img src="https://github.com/drivernf/README_Markdown/blob/main/among_us_discord_discord_keybinds.png" width="450" height="296">
 </p>
 
 9. Head back over to the Keybinds window for Among Us Auto Mute for Discord application
