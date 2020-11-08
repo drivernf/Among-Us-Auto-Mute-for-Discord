@@ -25,11 +25,22 @@ Automatically mutes and unmutes Discord while playing Among Us. Uses Discord's "
 ## Installation
 
 - [Download the latest release](https://github.com/drivernf/Among-Us-Auto-Mute-for-Discord/releases/download/0.1.2/AmongUsAutoMuteForDiscord.zip)
-- Extract the downloaded .zip folder
+- Extract the downloaded .zip file
 - Open the "AmongUsAutoMuteForDiscord" folder
 - Run the "Among Us Auto Mute for Discord.exe" file
 
 
 ## Getting Started
 
-This is the getting started section.
+1. After successfully installing, you should have a new taskbar tray icon
+2. Right click this icon and select "Enable Run at Startup" if you wish to have this application auto start after restarting your pc
+3. Right click the icon again and select "Change Push to Mute Keybind", you should see a new window appear in the center of your screen
+4. Open Discord and click the "User Settings" cogwheel
+5. Navigate to the "Keybinds" tab
+6. Select "Add a Keybind"
+7. Change the newly created keybind's action to "Push to Mute"
+8. Click the "Record Keybind" button and enter a keybind sequence of your choice
+9. Head back over to the Keybinds window for Among Us Auto Mute for Discord application
+10. Record the same key sequence as you did for Discord
+11. Click the "Test" button, you should notice Discord briefly mutes and unmutes
+12. Success! Now go enjoy playing Among Us and let us know if you have any issues
