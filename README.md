@@ -70,3 +70,8 @@ Automatically mutes and unmutes Discord while playing Among Us. Uses Discord's "
 
 11. Click the "Test" button, you should notice Discord briefly mutes and unmutes
 12. Success! Now go enjoy playing Among Us and let us know if you have any [issues](https://github.com/drivernf/Among-Us-Auto-Mute-for-Discord/issues/new?template=bug_report.md)
+
+
+## Copyright
+
+Written by [Nick Driver](https://github.com/drivernf) with help from [Andrew Denman](https://github.com/revt0).
