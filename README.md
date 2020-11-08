@@ -38,13 +38,33 @@ Automatically mutes and unmutes Discord while playing Among Us. Uses Discord's "
 </p>
 
 2. Right click this icon and select "Enable Run at Startup" if you wish to have this application auto start after restarting your pc
+<p align="center">
+  <img src="https://github.com/drivernf/README_Markdown/blob/main/among_us_discord_run_at_startup.png" width="279" height="124">
+</p>
+
 3. Right click the icon again and select "Change Push to Mute Keybind", you should see a new window appear in the center of your screen
+<p align="center">
+  <img src="https://github.com/drivernf/README_Markdown/blob/main/among_us_discord_change_keybind.png" width="404" height="97">
+</p>
+
 4. Open Discord and click the "User Settings" cogwheel
+<p align="center">
+  <img src="https://github.com/drivernf/README_Markdown/blob/main/among_us_discord_discord_settings.png" width="240" height="53">
+</p>
+
 5. Navigate to the "Keybinds" tab
 6. Select "Add a Keybind"
 7. Change the newly created keybind's action to "Push to Mute"
 8. Click the "Record Keybind" button and enter a keybind sequence of your choice
+<p align="center">
+  <img src="https://github.com/drivernf/README_Markdown/blob/main/among_us_discord_discord_keybinds.png" width="1002" height="592">
+</p>
+
 9. Head back over to the Keybinds window for Among Us Auto Mute for Discord application
 10. Record the same key sequence as you did for Discord
+<p align="center">
+  <img src="https://github.com/drivernf/README_Markdown/blob/main/among_us_discord_change_keybind_new.png" width="403" height="96">
+</p>
+
 11. Click the "Test" button, you should notice Discord briefly mutes and unmutes
 12. Success! Now go enjoy playing Among Us and let us know if you have any issues
