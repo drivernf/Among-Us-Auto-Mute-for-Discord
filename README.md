@@ -8,12 +8,25 @@
   No need for worrying about muting yourself anymore while playing Among Us!
   <br>
   <br>
+  <a href="https://github.com/twbs/bootstrap/issues/new?template=bug_report.md">About</a>
+  ·
+  <a href="https://github.com/twbs/bootstrap/issues/new?template=feature_request.md">Installation</a>
+  ·
+  <a href="https://themes.getbootstrap.com/">Getting Started</a>
+  ·
+  <a href="https://blog.getbootstrap.com/">Report Bug</a>
 </p>
 
-[About](#about)
-·
-[Installation](#installation)<a href="https://github.com/twbs/bootstrap/issues/new?template=feature_request.md">Installation</a>
-·
-[Getting Started](#getting-started)<a href="https://themes.getbootstrap.com/">Getting Started</a>
-·
-<a href="https://blog.getbootstrap.com/">Report Bug</a>
+## About
+
+This is the about section.
+
+
+## Installation
+
+This is the installation section.
+
+
+## Getting Started
+
+This is the getting started section.
