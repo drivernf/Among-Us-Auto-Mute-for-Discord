@@ -19,12 +19,15 @@
 
 ## About
 
-This is the about section.
+Automatically mutes and unmutes Discord while playing Among Us. Uses Discord's "Push to Mute" keybind to silence your microphone during gameplay and unmutes when events occur such as a meeting being called or the game ending. Also includes death detection, so that you will remain quiet in the unfortunate circumstance that you have fallen victim to an imposter.
 
 
 ## Installation
 
-This is the installation section.
+- [Download the latest release](https://github.com/drivernf/Among-Us-Auto-Mute-for-Discord/releases/download/0.1.2/AmongUsAutoMuteForDiscord.zip)
+- Extract the downloaded .zip folder
+- Open the "AmongUsAutoMuteForDiscord" folder
+- Run the "Among Us Auto Mute for Discord.exe" file
 
 
 ## Getting Started
