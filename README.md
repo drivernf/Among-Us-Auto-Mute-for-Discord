@@ -33,7 +33,7 @@ Automatically mutes and unmutes Discord while playing Among Us. Uses Discord's "
 ## Getting Started
 
 1. After successfully installing, you should have a new taskbar tray icon
-<img src="https://github.com/drivernf/README_Markdown/blob/main/among_us_discord_taskbar.png" width="215" height="80" align="center">
+⋅⋅⋅<img src="https://github.com/drivernf/README_Markdown/blob/main/among_us_discord_taskbar.png" width="215" height="80" align="center">
 
 2. Right click this icon and select "Enable Run at Startup" if you wish to have this application auto start after restarting your pc
 3. Right click the icon again and select "Change Push to Mute Keybind", you should see a new window appear in the center of your screen
