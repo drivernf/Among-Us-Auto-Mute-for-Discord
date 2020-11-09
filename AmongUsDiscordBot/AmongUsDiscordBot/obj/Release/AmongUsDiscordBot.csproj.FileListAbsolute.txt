@@ -5,3 +5,16 @@ D:\VS Projects\AmongUsDiscordBot\AmongUsDiscordBot\bin\Release\Among Us Auto Mut
 D:\VS Projects\AmongUsDiscordBot\AmongUsDiscordBot\obj\Release\Among Us Auto Mute for Discord.exe
 D:\VS Projects\AmongUsDiscordBot\AmongUsDiscordBot\obj\Release\Among Us Auto Mute for Discord.pdb
 D:\VS Projects\AmongUsDiscordBot\AmongUsDiscordBot\obj\Release\AmongUsDiscordBot.csprojAssemblyReference.cache
+D:\VS Projects\AmongUsDiscordBot\AmongUsDiscordBot\bin\Release\WindowsInput.dll
+D:\VS Projects\AmongUsDiscordBot\AmongUsDiscordBot\bin\Release\WindowsInput.xml
+D:\VS Projects\AmongUsDiscordBot\AmongUsDiscordBot\obj\Release\AmongUsDiscordBot.csproj.CopyComplete
+D:\VS Projects\AmongUsDiscordBot\AmongUsDiscordBot\obj\Release\AmongUsDiscordBot.ChangeKeybindForm.resources
+D:\VS Projects\AmongUsDiscordBot\AmongUsDiscordBot\obj\Release\AmongUsDiscordBot.csproj.GenerateResource.cache
+D:\VS Projects\AmongUsDiscordBot\AmongUsDiscordBot\obj\Release\AmongUsDiscordBot.Properties.Resources.resources
+D:\VS Projects\AmongUsDiscordBot\AmongUsDiscordBot\bin\Release\WindowsInput.pdb
+D:\VS Projects\AmongUsDiscordBot\AmongUsDiscordBot\bin\Release2\Among Us Auto Mute for Discord.exe.config
+D:\VS Projects\AmongUsDiscordBot\AmongUsDiscordBot\bin\Release2\Among Us Auto Mute for Discord.exe
+D:\VS Projects\AmongUsDiscordBot\AmongUsDiscordBot\bin\Release2\Among Us Auto Mute for Discord.pdb
+D:\VS Projects\AmongUsDiscordBot\AmongUsDiscordBot\bin\Release2\WindowsInput.dll
+D:\VS Projects\AmongUsDiscordBot\AmongUsDiscordBot\bin\Release2\WindowsInput.pdb
+D:\VS Projects\AmongUsDiscordBot\AmongUsDiscordBot\bin\Release2\WindowsInput.xml

@@ -6,16 +6,21 @@ using System.Drawing.Imaging;
 using System.Threading;
 using System.Windows.Forms;
 using System.IO;
+using WindowsInput;
+using WindowsInput.Native;
 
 namespace AmongUsDiscordBot
 {
     class Program
     {
+        public static VirtualKeyCode[] muteKeyCodes = { VirtualKeyCode.END };
+
         private static Thread loopThread;
         private static NotifyIcon notifyIcon;
         private static ContextMenuStrip CMS;
         private static bool muted = false;
         private static bool dead = false;
+        private static InputSimulator inputSimulator;
 
         static void Main(string[] args)
         {
@@ -25,6 +30,8 @@ namespace AmongUsDiscordBot
                 return;
             }
 
+            LoadKeyCodes();
+
             loopThread = new Thread(new ThreadStart(MainLoop));
             loopThread.Start();
 
@@ -33,6 +40,8 @@ namespace AmongUsDiscordBot
 
         private static void MainLoop()
         {
+            inputSimulator = new InputSimulator();
+
             while (true)
             {
                 Rect rect = ProcessRect("Among Us");
@@ -41,7 +50,7 @@ namespace AmongUsDiscordBot
                 {
                     if (muted)
                     {
-                        ToggleMute();
+                        Unmute();
                         muted = false;
                     }
 
@@ -55,7 +64,10 @@ namespace AmongUsDiscordBot
                 if (SearchPixels(rect, bitmap))
                 {
                     muted = !muted;
-                    ToggleMute();
+                    if (muted)
+                        Mute();
+                    else
+                        Unmute();
                     Thread.Sleep(5000);
                 }
                 else
@@ -63,9 +75,33 @@ namespace AmongUsDiscordBot
             }
         }
 
-        private static void ToggleMute()
+        private static void LoadKeyCodes()
         {
-            SendKeys.SendWait("{END}");
+            System.Collections.Specialized.StringCollection saved = Properties.Settings.Default.Keybind;
+            VirtualKeyCode[] savedKeybinds = new VirtualKeyCode[saved.Count];
+            
+            for (int i = 0; i < saved.Count; i++)
+            {
+                savedKeybinds[i] = Keybinds.KeyCodeLookup(saved[i]);
+            }
+
+            muteKeyCodes = savedKeybinds;
+        }
+
+        public static void Mute()
+        {
+            for (int i = 0; i < muteKeyCodes.Length; i++)
+            {
+                inputSimulator.Keyboard.KeyDown(muteKeyCodes[i]);
+            }
+        }
+
+        public static void Unmute()
+        {
+            for (int i = muteKeyCodes.Length - 1; i >= 0; i--)
+            {
+                inputSimulator.Keyboard.KeyUp(muteKeyCodes[i]);
+            }
         }
 
         private static void TaskBarTray()
@@ -93,6 +129,8 @@ namespace AmongUsDiscordBot
         {
             CMS.Items.Clear();
             string shortcutPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Startup), "Among Us Auto Mute.lnk");
+            CMS.Items.Add("Change Push to Mute Keybind", null, new EventHandler(Change_Toggle_Mute_Keybind));
+            CMS.Items.Add("-");
             if (!File.Exists(shortcutPath))
                 CMS.Items.Add("Enable Run at Startup", null, new EventHandler(Enable_Run_On_Startup));
             else
@@ -101,12 +139,18 @@ namespace AmongUsDiscordBot
             CMS.Items.Add("Exit", null, new EventHandler(Exit_Click));
         }
 
+        private static void Change_Toggle_Mute_Keybind(object sender, EventArgs e)
+        {
+            ChangeKeybindForm form = new ChangeKeybindForm();
+            form.Show();
+        }
+
         private static void Enable_Run_On_Startup(object sender, EventArgs e)
         {
-            string appPath = Path.Combine(Application.StartupPath, "Run.lnk");
+            string folderPath = Application.StartupPath;
             var startupProcess = new ProcessStartInfo();
             startupProcess.FileName = Path.Combine(Application.StartupPath, "Startup.exe");
-            startupProcess.Arguments = $"enable \"{appPath}\"";
+            startupProcess.Arguments = $"enable \"{folderPath}\"";
             startupProcess.Verb = "runas";
 
             var process = new Process();
@@ -148,6 +192,7 @@ namespace AmongUsDiscordBot
 
         private static void KillApplication()
         {
+            Unmute();
             notifyIcon.Visible = false;
             if (loopThread.ThreadState == System.Threading.ThreadState.Running)
                 loopThread.Abort();
@@ -252,8 +297,10 @@ namespace AmongUsDiscordBot
         {
             bool defeat01 = ComparePixels(bitmap, (int)(x * 0.351f), (int)(y * 0.1826f), "#FF0000");
             bool defeat02 = ComparePixels(bitmap, (int)(x * 0.473f), (int)(y * 0.1855f), "#FF0000");
+            bool defeat03 = ComparePixels(bitmap, (int)(x * 0.318f), (int)(y * 0.172f), "#000000"); // (610, 185) 1080p reference
+            bool defeat04 = ComparePixels(bitmap, (int)(x * 0.6775f), (int)(y * 0.172f), "#000000"); // (1300, 185) 1080p reference
 
-            if (defeat01 && defeat02)
+            if (defeat01 && defeat02 && defeat03 && defeat04)
             {
                 dead = false;
                 return true;

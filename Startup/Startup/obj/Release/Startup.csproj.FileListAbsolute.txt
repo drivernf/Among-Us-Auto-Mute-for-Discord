@@ -8,3 +8,4 @@ D:\VS Projects\Startup\Startup\obj\Release\Startup.csprojAssemblyReference.cache
 D:\VS Projects\AmongUsDiscordBot\AmongUsDiscordBot\bin\Release\Startup.exe.config
 D:\VS Projects\AmongUsDiscordBot\AmongUsDiscordBot\bin\Release\Startup.exe
 D:\VS Projects\AmongUsDiscordBot\AmongUsDiscordBot\bin\Release\Startup.pdb
+D:\VS Projects\Startup\Startup\obj\Release\Startup.csproj.CopyComplete
