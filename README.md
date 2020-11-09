@@ -26,7 +26,7 @@ Automatically mutes and unmutes Discord while playing Among Us. Uses Discord's "
 
 ## Installation
 
-- [Download the latest release](https://github.com/drivernf/Among-Us-Auto-Mute-for-Discord/releases/download/0.1.2/AmongUsAutoMuteForDiscord.zip)
+- [Download the latest release](https://github.com/drivernf/Among-Us-Auto-Mute-for-Discord/releases/download/1.0/AmongUsAutoMuteForDiscord.zip)
 - Extract the downloaded .zip file
 - Open the "AmongUsAutoMuteForDiscord" folder
 - Run the "Among Us Auto Mute for Discord.exe" file
